@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
     'Hunspell-iOS' => ['Pod/Assets/**/*']
   }
 
-  s.public_header_files = "Pod/Classes/hunspell.{h,hxx}"
+  s.public_header_files = "Pod/Classes/*.{h,hxx}"
   s.frameworks = 'Foundation'
   s.library = 'c++'
 end
