@@ -22,11 +22,12 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/{affentry,affixmgr,csutil,dictmgr,filemgr,hashmgr,hunspell,hunzip,phonet,replist,suggestmgr,suggestmgr}.cxx'
+  s.source_files = 'Pod/Classes/*'
   s.resource_bundles = {
     'Hunspell-iOS' => ['Pod/Assets/**/*']
   }
 
-  s.public_header_files = 'Pod/Classes/*.h'
+  s.public_header_files = "Pod/Classes/hunspell.{h,hxx}"
   s.frameworks = 'Foundation'
+  s.library = 'c++'
 end
